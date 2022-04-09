@@ -7,7 +7,41 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-img {
+.container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    background-color: rgb(191, 71, 193);
+    flex-direction: column;
+    border-radius: 1em;
+    padding: 35px 25px;
+    text-align: center;
+    align-items: center;
+}
+
+input {
+    padding: 8px;
+    margin: 7px;
+    border-radius: 0.5em;
+}
+
+.login_entrada {
+    border-radius: 0.5em;
+}
+
+.login_boton {
+    border-radius: 0.5em;
+    width: 20vw;
+    background-color: rgb(61, 61, 210);
+}
+
+.login_icon {
     height: 100px;
     width: 100px;
 }
