@@ -7,12 +7,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container {
+.form_container {
     display: flex; 
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0 auto;
+    flex-direction: column;
 }
 
 form {
@@ -20,28 +21,80 @@ form {
     background-color: rgb(191, 71, 193);
     flex-direction: column;
     border-radius: 1em;
-    padding: 35px 25px;
+    padding: 30px 25px;
     text-align: center;
     align-items: center;
+    align-items: stretch;
 }
 
 input {
     padding: 8px;
-    margin: 7px;
-    border-radius: 0.5em;
-}
-
-.login_entrada {
-    border-radius: 0.5em;
-}
-
-.login_boton {
-    border-radius: 0.5em;
-    width: 20vw;
-    background-color: rgb(61, 61, 210);
+    margin: 0px;
 }
 
 .login_icon {
     height: 100px;
     width: 100px;
+    align-self: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.login_nombre {
+    border-radius: 0.7em 0.7em 0em 0em;
+    border-style: solid;
+    border-color: #449;
+    border-bottom: 10px;
+}
+
+.login_nombre:focus {
+    outline: 0px;
+    transition: 150ms;
+    color: rgb(191, 71, 193);
+}
+
+.login_contraseña {
+    border-radius: 0em 0em 0.7em 0.7em;
+    border-style: solid;
+    border-color: #449;
+}
+
+.login_contraseña:focus {
+    outline: 0px;
+    transition: 150ms;
+    color: rgb(191, 71, 193);
+}
+
+.login_recuperar-pass {
+    margin: 15px 0 0 0;
+    color: rgb(44, 44, 143);
+}
+
+.login_boton {
+    background-color: rgb(61, 61, 210);
+    border-radius: 0.7em;
+    border-style: none;
+    margin: 15px 0 0 0;
+    transition: background-color 0.3s;
+}
+
+.login_boton:hover {
+    background-color: rgb(86, 86, 210);
+    cursor: pointer
+}
+
+.footer_container {
+    display: flex;
+    flex-direction:row;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer_container p {
+    margin: 30px 10px;
+    color: rgb(44, 1, 45);
+}
+
+.footer_container p:hover {
+    cursor: pointer;
 }
